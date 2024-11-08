@@ -50,6 +50,7 @@ const Contact = () => {
       toast.success("Сообщение успешно отправлено!", { className: "toast-custom", autoClose: 2000 });
     } catch (error) {
       toast.error("Пожалуйста, попробуйте позже.", { className: "toast-custom", autoClose: 2000 });
+      console.log(error);
     }
   };
 

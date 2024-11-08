@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import scss from "./Header.module.scss";
 import { Link as ScrollLink } from "react-scroll";
 import BurgerMenu from "@/components/ui/burgerMenu/BurgerMenu";
-import Link from "next/link";
 import { Element } from "react-scroll";
 
 const Header: React.FC = () => {
