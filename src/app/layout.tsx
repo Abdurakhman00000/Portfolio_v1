@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+import "./globals.scss";
+import CustomCursor from "@/components/ui/customCursor/CustomCursor";
+import Layout from "@/components/layout/Layout";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const audioWideSans = localFont({
+  src: "./fonts/Audiowide-Regular.ttf",
+  variable: "--font-Audiowide-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
@@ -25,8 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+      <body
+        className={`${audioWideSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Layout>{children}</Layout>
+        <CustomCursor/>
       </body>
     </html>
   );

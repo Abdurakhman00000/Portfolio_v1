@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+.Footer {
+
+    .content {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        text-align: center;
+        p {
+            color: white;
+            font-size: 13px;
+            font-weight: 400;
+            font-family: "Roboto Mono";
+
+            span {
+                color: rgba(168, 95, 0, 0.732);
+                font-family: "Audiowide";
+                font-size: 16px;
+            }
+        }
+    }
+}
