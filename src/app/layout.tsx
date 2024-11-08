@@ -4,14 +4,20 @@ import "./globals.scss";
 import CustomCursor from "@/components/ui/customCursor/CustomCursor";
 import Layout from "@/components/layout/Layout";
 
-const audioWideSans = localFont({
+const geistAudioWide = localFont({
   src: "./fonts/Audiowide-Regular.ttf",
-  variable: "--font-Audiowide-sans",
+  variable: "--font-audiowide-sans",
+  weight: "400",
+  style: "normal",
+});
+const geistRobotoMono = localFont({
+  src: "./fonts/RobotoMono-VariableFont_wght.ttf",
+  variable: "--font-robotoMono-mono",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const geistInter = localFont({
+  src: "./fonts/Inter-VariableFont_opsz,wght.ttf",
+  variable: "--font-inter-mono",
   weight: "100 900",
 });
 
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${audioWideSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistAudioWide.variable} ${geistRobotoMono.variable} ${geistInter.variable} antialiased`}
       >
         <Layout>{children}</Layout>
         <CustomCursor/>
