@@ -16,7 +16,7 @@ const About = () => {
   return (
     <Element name="about">
       <section className={scss.About}>
-        <div className="container_for_content">
+        <div className="container_for_content"> 
           <div className={scss.content}>
             <div className={scss.about_me_container}>
               <div className={scss.about_me_text}>
@@ -29,7 +29,29 @@ const About = () => {
                   <p>{aboutText.text3}</p>
                 </div>
 
-                <div className={scss.skills}></div>
+                <div className={scss.skills}>
+                  <h4><span>My</span> Skills:</h4>
+                  <div className={scss.main_skill}>
+                    <div className={scss.skill_left}>
+                      <p><span>+</span> JavaScript</p>
+                      <p><span>+</span> React</p>
+                      <p><span>+</span> HTML</p>
+                      <p><span>+</span> CSS/SCSS</p>
+                      <p><span>+</span> Redux</p>
+                      <p><span>+</span> Supabase</p>
+                      <p><span>+</span> NodeJS</p>
+                    </div>
+                    <div className={scss.skill_right}>
+                    <p><span>+</span> TypeScript</p>
+                      <p><span>+</span> NextJS</p>
+                      <p><span>+</span> Tailwind CSS</p>
+                      <p><span>+</span> RTK-query</p>
+                      <p><span>+</span> WebSocket</p>
+                      <p><span>+</span> Prisma ORM</p>
+                      <p><span>+</span> SQL</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
